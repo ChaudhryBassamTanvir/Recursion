@@ -3,7 +3,28 @@ import java.util.Scanner;
 public class SquareRootOfX {
 
     public static double SquareRootOfXToN(int x , int n){
-return Math.pow(x, n);
+        if (n==0) {
+            return 1;
+
+            
+        }
+
+        if (x==0) {
+            return 0;
+        }
+
+
+
+
+
+
+        double xPowm1= SquareRootOfXToN(x, n-1);
+double xPow= x*xPowm1;
+return xPow;
+
+
+
+// return Math.pow(x, n);
 
     }
 
