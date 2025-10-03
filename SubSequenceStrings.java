@@ -3,7 +3,12 @@ public class SubSequenceStrings {
 
 
     public static void printSubSeq(String str,String newStr,int index){
-
+        if (index==str.length()) {
+            System.out.println(newStr);
+            return;
+            
+        }
+        //abc 
         char currChar = str.charAt(index);
         //to be
 
